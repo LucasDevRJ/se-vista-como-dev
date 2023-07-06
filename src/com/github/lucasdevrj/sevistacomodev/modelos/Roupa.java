@@ -7,7 +7,6 @@ public class Roupa {
     protected char tamanho;
     protected String marca;
     protected String descricao;
-
     public Roupa(String nome, double preco, String cor,
                  char tamanho, String marca, String descricao) {
         this.nome = nome;
@@ -17,8 +16,22 @@ public class Roupa {
         this.marca = marca;
         this.descricao = descricao;
     }
-
     public String getNome() {
         return nome;
+    }
+    public double getPreco() {
+        return preco;
+    }
+    public String getCor() {
+        return cor;
+    }
+    public char getTamanho() {
+        return tamanho;
+    }
+    public String getMarca() {
+        return marca;
+    }
+    public String getDescricao() {
+        return descricao;
     }
 }
