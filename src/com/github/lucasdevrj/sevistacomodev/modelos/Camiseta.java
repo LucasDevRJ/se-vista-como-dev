@@ -1,3 +1,5 @@
+package com.github.lucasdevrj.sevistacomodev.modelos;
+
 public class Camiseta extends Roupa {
     public Camiseta(String nome, double preco, String cor,
                     String tamanho, String marca, String descricao) {

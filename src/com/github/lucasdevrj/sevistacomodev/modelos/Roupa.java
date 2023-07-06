@@ -1,3 +1,5 @@
+package com.github.lucasdevrj.sevistacomodev.modelos;
+
 public class Roupa {
     protected String nome;
     protected double preco;
