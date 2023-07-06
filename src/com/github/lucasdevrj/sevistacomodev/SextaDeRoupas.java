@@ -5,11 +5,10 @@ import com.github.lucasdevrj.sevistacomodev.modelos.Roupa;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class ListaDeRoupas {
+public class SextaDeRoupas {
     private ArrayList<Roupa> sextaDeRoupas = new ArrayList<Roupa>();
     public void adicionaNaSexta(Roupa roupa) {
         Scanner entrada = new Scanner(System.in);
-
         System.out.print("Você deseja adicionar na sexta?\n1 - Sim ou 2 - Não: ");
         int opcao = entrada.nextInt();
 

@@ -1,10 +1,8 @@
 package com.github.lucasdevrj.sevistacomodev.principal;
 
-import com.github.lucasdevrj.sevistacomodev.ListaDeRoupas;
+import com.github.lucasdevrj.sevistacomodev.SextaDeRoupas;
 import com.github.lucasdevrj.sevistacomodev.modelos.Camiseta;
-import com.github.lucasdevrj.sevistacomodev.modelos.Roupa;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class MenuCamiseta {
@@ -18,7 +16,7 @@ public class MenuCamiseta {
             "Marrom", 'M', "Ripping",
             "Camiseta Regular Básica Em Algodão Com Manga Longa Marrom");
 
-    public void exibeMenuCamiseta(ListaDeRoupas sexta) {
+    public void exibeMenuCamiseta(SextaDeRoupas sexta) {
         Scanner entrada = new Scanner(System.in);
 
         String menu = """
@@ -35,19 +33,20 @@ public class MenuCamiseta {
         int opcao = entrada.nextInt();
 
         switch (opcao) {
-                case 1:
+            case 1:
                     String informacoesCamiseta = """
-                            Nome: %s
-                            Preço: R$ %.2f
-                            Cor: %s
-                            Tamanho: %s
-                            Marca: %s
-                            Descrição: %s
-                            """.formatted(camiseta1.getNome(), camiseta1.getPreco(),
+                                Nome: %s
+                                Preço: R$ %.2f
+                                Cor: %s
+                                Tamanho: %s
+                                Marca: %s
+                                Descrição: %s
+                                """.formatted(camiseta1.getNome(), camiseta1.getPreco(),
                             camiseta1.getCor(), camiseta1.getTamanho(), camiseta1.getMarca(),
                             camiseta1.getDescricao());
                     System.out.println(informacoesCamiseta);
                     sexta.adicionaNaSexta(camiseta1);
+                    exibeMenuCamiseta(sexta);
                 break;
         }
     }
