@@ -1,15 +1,16 @@
 package com.github.lucasdevrj.sevistacomodev.principal;
+import com.github.lucasdevrj.sevistacomodev.ListaDeRoupas;
 import com.github.lucasdevrj.sevistacomodev.modelos.Roupa;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 public class MenuPrincipal {
     public static void main(String[] args) {
-        ArrayList<Roupa> sextaDeRoupas = new ArrayList<Roupa>();
+        ListaDeRoupas sextaDeRoupas = new ListaDeRoupas();
         MenuPrincipal menuPrincipal = new MenuPrincipal();
         menuPrincipal.exibeMenuPrincipal(sextaDeRoupas);
     }
-    public void exibeMenuPrincipal(ArrayList<Roupa> sexta) {
+    public void exibeMenuPrincipal(ListaDeRoupas sexta) {
         Scanner entrada = new Scanner(System.in);
 
         String menu = """
