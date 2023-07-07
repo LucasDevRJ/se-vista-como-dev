@@ -32,8 +32,7 @@ public class MenuPrincipal {
                 break;
 
                 case 4:
-                    sexta.exibeRoupasDaSexta();
-                    exibeMenuPrincipal(sexta);
+                    sexta.exibeMenuSexta(sexta);
                 break;
         }
     }
