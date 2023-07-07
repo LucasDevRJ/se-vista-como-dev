@@ -33,7 +33,7 @@ public class MenuCamiseta {
         int opcao = entrada.nextInt();
 
         switch (opcao) {
-            case 1:
+                case 1:
                     String informacoesCamiseta = """
                                 Nome: %s
                                 Preço: R$ %.2f
@@ -48,6 +48,41 @@ public class MenuCamiseta {
                     sexta.adicionaNaSexta(camiseta1);
                     exibeMenuCamiseta(sexta);
                 break;
+
+                case 2:
+                    informacoesCamiseta = """
+                                Nome: %s
+                                Preço: R$ %.2f
+                                Cor: %s
+                                Tamanho: %s
+                                Marca: %s
+                                Descrição: %s
+                                """.formatted(camiseta2.getNome(), camiseta2.getPreco(),
+                        camiseta2.getCor(), camiseta2.getTamanho(), camiseta2.getMarca(),
+                        camiseta2.getDescricao());
+                    System.out.println(informacoesCamiseta);
+                    sexta.adicionaNaSexta(camiseta2);
+                    exibeMenuCamiseta(sexta);
+                break;
+
+            case 3:
+                informacoesCamiseta = """
+                                Nome: %s
+                                Preço: R$ %.2f
+                                Cor: %s
+                                Tamanho: %s
+                                Marca: %s
+                                Descrição: %s
+                                """.formatted(camiseta3.getNome(), camiseta3.getPreco(),
+                        camiseta3.getCor(), camiseta3.getTamanho(), camiseta3.getMarca(),
+                        camiseta3.getDescricao());
+                System.out.println(informacoesCamiseta);
+                sexta.adicionaNaSexta(camiseta3);
+                exibeMenuCamiseta(sexta);
+                break;
+
+            default:
+                System.out.println("Opção inválida!");
         }
     }
 }
