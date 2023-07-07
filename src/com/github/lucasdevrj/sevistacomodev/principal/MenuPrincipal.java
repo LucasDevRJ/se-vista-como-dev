@@ -18,6 +18,7 @@ public class MenuPrincipal {
                 1 - Ver Camisetas
                 2 - Ver Calças
                 3 - Ver Calçados
+                4 - Ver Sexta
                 --------------------------------------------
                 """;
         System.out.println(menu);
@@ -28,6 +29,10 @@ public class MenuPrincipal {
                 case 1:
                     MenuCamiseta menuCamiseta = new MenuCamiseta();
                     menuCamiseta.exibeMenuCamiseta(sexta);
+                break;
+
+                case 4:
+                    sexta.exibeRoupasDaSexta();
                 break;
         }
     }

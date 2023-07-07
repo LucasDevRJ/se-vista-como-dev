@@ -23,4 +23,15 @@ public class SextaDeRoupas {
             System.out.println("A " + roupa.getNome() + " foi adiciona na sexta!!");
         }
     }
+
+    public void exibeRoupasDaSexta() {
+        for (Roupa roupa : sextaDeRoupas) {
+            String informacoes = """
+                    Nome: %s
+                    Preço: %.2f
+                    Descrição: %s
+                    """.formatted(roupa.getNome(), roupa.getPreco(), roupa.getDescricao());
+            System.out.println(informacoes);
+        }
+    }
 }
