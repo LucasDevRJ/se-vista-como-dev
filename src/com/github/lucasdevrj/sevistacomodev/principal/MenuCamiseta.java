@@ -6,6 +6,8 @@ import com.github.lucasdevrj.sevistacomodev.modelos.Camiseta;
 import java.util.Scanner;
 
 public class MenuCamiseta {
+
+    MenuPrincipal menuPrincipal = new MenuPrincipal();
     Camiseta camiseta1 = new Camiseta("Camiseta Relaxed", 99.90, "Branca",
             'M', "Blue Steel",
             "Camiseta Relaxed Em Algodão Com Gola Média E Manga Curta Branco");
@@ -65,8 +67,8 @@ public class MenuCamiseta {
                     exibeMenuCamiseta(sexta);
                 break;
 
-            case 3:
-                informacoesCamiseta = """
+                case 3:
+                    informacoesCamiseta = """
                                 Nome: %s
                                 Preço: R$ %.2f
                                 Cor: %s
@@ -76,9 +78,13 @@ public class MenuCamiseta {
                                 """.formatted(camiseta3.getNome(), camiseta3.getPreco(),
                         camiseta3.getCor(), camiseta3.getTamanho(), camiseta3.getMarca(),
                         camiseta3.getDescricao());
-                System.out.println(informacoesCamiseta);
-                sexta.adicionaNaSexta(camiseta3);
-                exibeMenuCamiseta(sexta);
+                    System.out.println(informacoesCamiseta);
+                    sexta.adicionaNaSexta(camiseta3);
+                    exibeMenuCamiseta(sexta);
+                break;
+
+                case 4:
+                    menuPrincipal.exibeMenuPrincipal(sexta);
                 break;
 
             default:

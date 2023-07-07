@@ -33,6 +33,7 @@ public class MenuPrincipal {
 
                 case 4:
                     sexta.exibeRoupasDaSexta();
+                    exibeMenuPrincipal(sexta);
                 break;
         }
     }
