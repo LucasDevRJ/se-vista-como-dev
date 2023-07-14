@@ -11,6 +11,14 @@ public class SextaDeRoupas {
     private double precoTotalDaSexta = 0;
     Scanner entrada = new Scanner(System.in);
     MenuPrincipal menuPrincipal = new MenuPrincipal();
+    public ArrayList<Roupa> getSextaDeRoupas() {
+        return sextaDeRoupas;
+    }
+
+    public double getPrecoTotalDaSexta() {
+        return precoTotalDaSexta;
+    }
+
     public void exibeMenuSexta(SextaDeRoupas sexta) {
         String menu = """
                 -------------------|SEXTA|-------------------
