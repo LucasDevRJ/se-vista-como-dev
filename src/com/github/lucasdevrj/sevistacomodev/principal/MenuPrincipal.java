@@ -19,6 +19,7 @@ public class MenuPrincipal {
                 2 - Ver Calças
                 3 - Ver Calçados
                 4 - Ver Sexta
+                5 - Caixa
                 --------------------------------------------
                 """;
         System.out.println(menu);
@@ -43,6 +44,10 @@ public class MenuPrincipal {
 
                 case 4:
                     sexta.exibeMenuSexta(sexta);
+                break;
+
+                case 5:
+
                 break;
         }
     }
