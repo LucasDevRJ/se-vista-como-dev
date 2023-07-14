@@ -13,11 +13,11 @@ public class MenuCalca {
     Calca calca2 = new Calca("Calça Comfort", 179.90, "Verde",
             'G', "Marfinno",
             "Calça Comfort Em Sarja Com Cordão E Bolsos Verde");
-    Calca camiseta3 = new Calca("Camiseta Regular", 69.90,
-            "Marrom", 'M', "Ripping",
-            "Camiseta Regular Básica Em Algodão Com Manga Longa Marrom");
+    Calca calca3 = new Calca("Calça Slim", 159.90,
+            "Azul Claro", 'M', "Marfinno",
+            "Calça Slim Básica Jeans Com Bolsos Azul Claro");
 
-    public void exibeMenuCamiseta(SextaDeRoupas sexta) {
+    public void exibeMenuCalca(SextaDeRoupas sexta) {
         Scanner entrada = new Scanner(System.in);
 
         String menu = """
@@ -28,7 +28,7 @@ public class MenuCalca {
                 3 - Ver %s
                 4 - Voltar
                 --------------------------------------------
-                """.formatted(camiseta1.getNome(), calca2.getNome(), camiseta3.getNome());
+                """.formatted(calca1.getNome(), calca2.getNome(), calca3.getNome());
         System.out.println(menu);
         System.out.print("Digite a opção desejada: ");
         int opcao = entrada.nextInt();
@@ -42,12 +42,12 @@ public class MenuCalca {
                                 Tamanho: %s
                                 Marca: %s
                                 Descrição: %s
-                                """.formatted(camiseta1.getNome(), camiseta1.getPreco(),
-                            camiseta1.getCor(), camiseta1.getTamanho(), camiseta1.getMarca(),
-                            camiseta1.getDescricao());
+                                """.formatted(calca1.getNome(), calca1.getPreco(),
+                            calca1.getCor(), calca1.getTamanho(), calca1.getMarca(),
+                            calca1.getDescricao());
                     System.out.println(informacoesCamiseta);
-                    sexta.adicionaNaSexta(camiseta1);
-                    exibeMenuCamiseta(sexta);
+                    sexta.adicionaNaSexta(calca1);
+                    exibeMenuCalca(sexta);
                 break;
 
                 case 2:
@@ -63,7 +63,7 @@ public class MenuCalca {
                         calca2.getDescricao());
                     System.out.println(informacoesCamiseta);
                     sexta.adicionaNaSexta(calca2);
-                    exibeMenuCamiseta(sexta);
+                    exibeMenuCalca(sexta);
                 break;
 
                 case 3:
@@ -74,12 +74,12 @@ public class MenuCalca {
                                 Tamanho: %s
                                 Marca: %s
                                 Descrição: %s
-                                """.formatted(camiseta3.getNome(), camiseta3.getPreco(),
-                        camiseta3.getCor(), camiseta3.getTamanho(), camiseta3.getMarca(),
-                        camiseta3.getDescricao());
+                                """.formatted(calca3.getNome(), calca3.getPreco(),
+                        calca3.getCor(), calca3.getTamanho(), calca3.getMarca(),
+                        calca3.getDescricao());
                     System.out.println(informacoesCamiseta);
-                    sexta.adicionaNaSexta(camiseta3);
-                    exibeMenuCamiseta(sexta);
+                    sexta.adicionaNaSexta(calca3);
+                    exibeMenuCalca(sexta);
                 break;
 
                 case 4:
