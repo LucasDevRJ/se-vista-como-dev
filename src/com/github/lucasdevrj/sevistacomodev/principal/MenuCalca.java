@@ -1,19 +1,19 @@
 package com.github.lucasdevrj.sevistacomodev.principal;
 
 import com.github.lucasdevrj.sevistacomodev.SextaDeRoupas;
-import com.github.lucasdevrj.sevistacomodev.modelos.Camiseta;
+import com.github.lucasdevrj.sevistacomodev.modelos.Calca;
 
 import java.util.Scanner;
 
-public class MenuCamiseta {
+public class MenuCalca {
     MenuPrincipal menuPrincipal = new MenuPrincipal();
-    Camiseta camiseta1 = new Camiseta("Camiseta Relaxed", 99.90, "Branca",
-            'M', "Blue Steel",
-            "Camiseta Relaxed Em Algodão Com Gola Média E Manga Curta Branco");
-    Camiseta camiseta2 = new Camiseta("Camiseta Regular", 59.90, "Preta",
-            'G', "Ripping",
-            "Camiseta Regular Em Algodão Com Estampa De Triângulo E Lettering Preto");
-    Camiseta camiseta3 = new Camiseta("Camiseta Regular", 69.90,
+    Calca calca1 = new Calca("Calça Slim", 119.90, "Preta",
+            'M', "REQUEST",
+            "Calça Slim Em Sarja Com Pregas Preto");
+    Calca calca2 = new Calca("Calça Comfort", 179.90, "Verde",
+            'G', "Marfinno",
+            "Calça Comfort Em Sarja Com Cordão E Bolsos Verde");
+    Calca camiseta3 = new Calca("Camiseta Regular", 69.90,
             "Marrom", 'M', "Ripping",
             "Camiseta Regular Básica Em Algodão Com Manga Longa Marrom");
 
@@ -28,7 +28,7 @@ public class MenuCamiseta {
                 3 - Ver %s
                 4 - Voltar
                 --------------------------------------------
-                """.formatted(camiseta1.getNome(), camiseta2.getNome(), camiseta3.getNome());
+                """.formatted(camiseta1.getNome(), calca2.getNome(), camiseta3.getNome());
         System.out.println(menu);
         System.out.print("Digite a opção desejada: ");
         int opcao = entrada.nextInt();
@@ -58,11 +58,11 @@ public class MenuCamiseta {
                                 Tamanho: %s
                                 Marca: %s
                                 Descrição: %s
-                                """.formatted(camiseta2.getNome(), camiseta2.getPreco(),
-                        camiseta2.getCor(), camiseta2.getTamanho(), camiseta2.getMarca(),
-                        camiseta2.getDescricao());
+                                """.formatted(calca2.getNome(), calca2.getPreco(),
+                        calca2.getCor(), calca2.getTamanho(), calca2.getMarca(),
+                        calca2.getDescricao());
                     System.out.println(informacoesCamiseta);
-                    sexta.adicionaNaSexta(camiseta2);
+                    sexta.adicionaNaSexta(calca2);
                     exibeMenuCamiseta(sexta);
                 break;
 
