@@ -4,7 +4,6 @@ import com.github.lucasdevrj.sevistacomodev.modelos.Roupa;
 import com.github.lucasdevrj.sevistacomodev.principal.MenuPrincipal;
 import com.github.lucasdevrj.sevistacomodev.sexta.SextaDeRoupas;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Caixa {
@@ -23,18 +22,25 @@ public class Caixa {
         } else if (opcao == 2) {
             MenuPrincipal menuPrincipal = new MenuPrincipal();
             menuPrincipal.exibeMenuPrincipal(sexta);
+        } else {
+            System.out.println("Opção inválida!!");
         }
     }
     public void venderRoupas(SextaDeRoupas sexta) {
         int tamanhoDaSexta = sexta.getSextaDeRoupas().size();
-        for (int i = 0; i < tamanhoDaSexta; i++) {
-            Roupa roupa = sexta.getSextaDeRoupas().get(i);
-            System.out.println("Roupa: " + roupa.getNome());
-            System.out.printf("Preço: R$ %.2f\n",roupa.getPreco());
+        if (tamanhoDaSexta > 0) {
+            for (int i = 0; i < tamanhoDaSexta; i++) {
+                Roupa roupa = sexta.getSextaDeRoupas().get(i);
+                System.out.println("Roupa: " + roupa.getNome());
+                System.out.printf("Preço: R$ %.2f\n", roupa.getPreco());
+            }
+            if (sexta.getDesconto() > 0.0) {
+                System.out.printf("Desconto: %.2f%%\n", sexta.getDesconto());
+            }
+            System.out.printf("Preço Total: R$ %.2f\n", sexta.getPrecoTotalSexta());
+        } else {
+            System.out.println("Coloque roupas na sexta para poder compra-las!!");
         }
-        if (sexta.getDesconto() > 0.0) {
-            System.out.printf("Desconto: %.2f%%\n", sexta.getDesconto());
-        }
-        System.out.printf("Preço Total: R$ %.2f\n", sexta.getPrecoTotalSexta());
+        exibeMenuCaixa(sexta);
     }
 }
