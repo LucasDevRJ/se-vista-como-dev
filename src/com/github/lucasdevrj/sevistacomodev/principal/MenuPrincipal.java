@@ -1,5 +1,5 @@
 package com.github.lucasdevrj.sevistacomodev.principal;
-import com.github.lucasdevrj.sevistacomodev.Caixa;
+import com.github.lucasdevrj.sevistacomodev.caixa.Caixa;
 import com.github.lucasdevrj.sevistacomodev.sexta.SextaDeRoupas;
 
 import java.util.Scanner;

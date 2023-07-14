@@ -1,4 +1,4 @@
-package com.github.lucasdevrj.sevistacomodev;
+package com.github.lucasdevrj.sevistacomodev.caixa;
 
 import com.github.lucasdevrj.sevistacomodev.modelos.Roupa;
 import com.github.lucasdevrj.sevistacomodev.principal.MenuPrincipal;
@@ -30,9 +30,11 @@ public class Caixa {
         for (int i = 0; i < tamanhoDaSexta; i++) {
             Roupa roupa = sexta.getSextaDeRoupas().get(i);
             System.out.println("Roupa: " + roupa.getNome());
-            System.out.printf("\nPreço: R$ %.2f",roupa.getPreco());
+            System.out.printf("Preço: R$ %.2f\n",roupa.getPreco());
         }
-        System.out.printf("\nPreço Total: R$ %.2f", sexta.getPrecoTotalSexta());
-
+        if (sexta.getDesconto() > 0.0) {
+            System.out.printf("Desconto: %.2f%%\n", sexta.getDesconto());
+        }
+        System.out.printf("Preço Total: R$ %.2f\n", sexta.getPrecoTotalSexta());
     }
 }

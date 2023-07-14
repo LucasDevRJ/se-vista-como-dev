@@ -1,6 +1,6 @@
 package com.github.lucasdevrj.sevistacomodev.sexta;
 
-import com.github.lucasdevrj.sevistacomodev.Calculadora;
+import com.github.lucasdevrj.sevistacomodev.calculadora.Calculadora;
 import com.github.lucasdevrj.sevistacomodev.modelos.Roupa;
 import com.github.lucasdevrj.sevistacomodev.principal.MenuPrincipal;
 
@@ -9,7 +9,6 @@ import java.util.Scanner;
 
 public class SextaDeRoupas {
     private ArrayList<Roupa> sextaDeRoupas = new ArrayList<Roupa>();
-    private double precoTotalSexta;
     Scanner entrada = new Scanner(System.in);
     MenuPrincipal menuPrincipal = new MenuPrincipal();
     Calculadora calculadora = new Calculadora();
@@ -17,7 +16,9 @@ public class SextaDeRoupas {
     public double getPrecoTotalSexta() {
         return calculadora.getPrecoTotalSexta();
     }
-
+    public double getDesconto() {
+        return calculadora.getDesconto() * 100;
+    }
     public ArrayList<Roupa> getSextaDeRoupas() {
         return sextaDeRoupas;
     }
