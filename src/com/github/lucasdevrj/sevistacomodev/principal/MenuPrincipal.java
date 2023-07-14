@@ -36,6 +36,11 @@ public class MenuPrincipal {
                     menuCalca.exibeMenuCalca(sexta);
                 break;
 
+                case 3:
+                    MenuCalcado menuCalcado = new MenuCalcado();
+                    menuCalcado.exibeMenuCalcado(sexta);
+                break;
+
                 case 4:
                     sexta.exibeMenuSexta(sexta);
                 break;

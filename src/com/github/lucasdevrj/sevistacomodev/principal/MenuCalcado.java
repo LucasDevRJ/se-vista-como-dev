@@ -1,85 +1,83 @@
 package com.github.lucasdevrj.sevistacomodev.principal;
 
 import com.github.lucasdevrj.sevistacomodev.SextaDeRoupas;
-import com.github.lucasdevrj.sevistacomodev.modelos.Calca;
+import com.github.lucasdevrj.sevistacomodev.modelos.Calcado;
 
 import java.util.Scanner;
 
 public class MenuCalcado {
     MenuPrincipal menuPrincipal = new MenuPrincipal();
-    Calca calca1 = new Calca("Calça Slim", 119.90, "Preta",
-            'M', "REQUEST",
-            "Calça Slim Em Sarja Com Pregas Preto");
-    Calca calca2 = new Calca("Calça Comfort", 179.90, "Verde",
-            'G', "Marfinno",
-            "Calça Comfort Em Sarja Com Cordão E Bolsos Verde");
-    Calca calca3 = new Calca("Calça Slim", 159.90,
-            "Azul Claro", 'M', "Marfinno",
-            "Calça Slim Básica Jeans Com Bolsos Azul Claro");
-
-    public void exibeMenuCalca(SextaDeRoupas sexta) {
+    Calcado calcado1 = new Calcado("Tênis Street", 159.90, "Preta",
+            "40", "Viko",
+            "Tênis Street Cano Baixo Com Recortes E Cadarço Preto");
+    Calcado calcado2 = new Calcado("Tênis Slip", 159.90, "Bege",
+            "42", "Viko",
+            "Tênis Slip On Em Couro Com Elástico E Recortes Bege");
+    Calcado calcado3 = new Calcado("Tênis Vulcan", 139.90,
+            "Cinza", "40", "Viko",
+            "Tênis Vulcan Cano Baixo Com Ponteira Texturizada Bege");
+    public void exibeMenuCalcado(SextaDeRoupas sexta) {
         Scanner entrada = new Scanner(System.in);
-
         String menu = """
                 -------------------|CAMISETAS|-------------------
-                Nossas Camisetas:
+                Nossos Calçados:
                 1 - Ver %s
                 2 - Ver %s
                 3 - Ver %s
                 4 - Voltar
                 --------------------------------------------
-                """.formatted(calca1.getNome(), calca2.getNome(), calca3.getNome());
+                """.formatted(calcado1.getNome(), calcado2.getNome(), calcado3.getNome());
         System.out.println(menu);
         System.out.print("Digite a opção desejada: ");
         int opcao = entrada.nextInt();
 
         switch (opcao) {
                 case 1:
-                    String informacoesCamiseta = """
+                    String informacoesCalcados = """
                                 Nome: %s
                                 Preço: R$ %.2f
                                 Cor: %s
                                 Tamanho: %s
                                 Marca: %s
                                 Descrição: %s
-                                """.formatted(calca1.getNome(), calca1.getPreco(),
-                            calca1.getCor(), calca1.getTamanho(), calca1.getMarca(),
-                            calca1.getDescricao());
-                    System.out.println(informacoesCamiseta);
-                    sexta.adicionaNaSexta(calca1);
-                    exibeMenuCalca(sexta);
+                                """.formatted(calcado1.getNome(), calcado1.getPreco(),
+                            calcado1.getCor(), calcado1.getTamanho(), calcado1.getMarca(),
+                            calcado1.getDescricao());
+                    System.out.println(informacoesCalcados);
+                    sexta.adicionaNaSexta(calcado1);
+                    exibeMenuCalcado(sexta);
                 break;
 
                 case 2:
-                    informacoesCamiseta = """
+                    informacoesCalcados = """
                                 Nome: %s
                                 Preço: R$ %.2f
                                 Cor: %s
                                 Tamanho: %s
                                 Marca: %s
                                 Descrição: %s
-                                """.formatted(calca2.getNome(), calca2.getPreco(),
-                        calca2.getCor(), calca2.getTamanho(), calca2.getMarca(),
-                        calca2.getDescricao());
-                    System.out.println(informacoesCamiseta);
-                    sexta.adicionaNaSexta(calca2);
-                    exibeMenuCalca(sexta);
+                                """.formatted(calcado2.getNome(), calcado2.getPreco(),
+                        calcado2.getCor(), calcado2.getTamanho(), calcado2.getMarca(),
+                        calcado2.getDescricao());
+                    System.out.println(informacoesCalcados);
+                    sexta.adicionaNaSexta(calcado2);
+                    exibeMenuCalcado(sexta);
                 break;
 
                 case 3:
-                    informacoesCamiseta = """
+                    informacoesCalcados = """
                                 Nome: %s
                                 Preço: R$ %.2f
                                 Cor: %s
                                 Tamanho: %s
                                 Marca: %s
                                 Descrição: %s
-                                """.formatted(calca3.getNome(), calca3.getPreco(),
-                        calca3.getCor(), calca3.getTamanho(), calca3.getMarca(),
-                        calca3.getDescricao());
-                    System.out.println(informacoesCamiseta);
-                    sexta.adicionaNaSexta(calca3);
-                    exibeMenuCalca(sexta);
+                                """.formatted(calcado3.getNome(), calcado3.getPreco(),
+                        calcado3.getCor(), calcado3.getTamanho(), calcado3.getMarca(),
+                        calcado3.getDescricao());
+                    System.out.println(informacoesCalcados);
+                    sexta.adicionaNaSexta(calcado3);
+                    exibeMenuCalcado(sexta);
                 break;
 
                 case 4:
