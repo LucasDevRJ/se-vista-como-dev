@@ -1,4 +1,4 @@
-package com.github.lucasdevrj.sevistacomodev;
+package com.github.lucasdevrj.sevistacomodev.sexta;
 
 import com.github.lucasdevrj.sevistacomodev.modelos.Roupa;
 import com.github.lucasdevrj.sevistacomodev.principal.MenuPrincipal;

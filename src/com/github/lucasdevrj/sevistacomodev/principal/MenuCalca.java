@@ -1,6 +1,6 @@
 package com.github.lucasdevrj.sevistacomodev.principal;
 
-import com.github.lucasdevrj.sevistacomodev.SextaDeRoupas;
+import com.github.lucasdevrj.sevistacomodev.sexta.SextaDeRoupas;
 import com.github.lucasdevrj.sevistacomodev.modelos.Calca;
 
 import java.util.Scanner;

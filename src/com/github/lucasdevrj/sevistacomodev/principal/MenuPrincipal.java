@@ -1,5 +1,5 @@
 package com.github.lucasdevrj.sevistacomodev.principal;
-import com.github.lucasdevrj.sevistacomodev.SextaDeRoupas;
+import com.github.lucasdevrj.sevistacomodev.sexta.SextaDeRoupas;
 
 import java.util.Scanner;
 public class MenuPrincipal {
