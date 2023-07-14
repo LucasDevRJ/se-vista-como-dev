@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 public class SextaDeRoupas {
     private ArrayList<Roupa> sextaDeRoupas = new ArrayList<Roupa>();
+    private double precoTotalDaSexta = 0;
     Scanner entrada = new Scanner(System.in);
     MenuPrincipal menuPrincipal = new MenuPrincipal();
     public void exibeMenuSexta(SextaDeRoupas sexta) {
@@ -54,6 +55,7 @@ public class SextaDeRoupas {
 
         if (opcao == 1) {
             sextaDeRoupas.add(roupa);
+            this.precoTotalDaSexta += roupa.getPreco();
             System.out.println("A " + roupa.getNome() + " foi adiciona na sexta!!");
         }
     }
