@@ -30,8 +30,9 @@ public class Caixa {
         for (int i = 0; i < tamanhoDaSexta; i++) {
             Roupa roupa = sexta.getSextaDeRoupas().get(i);
             System.out.println("Roupa: " + roupa.getNome());
-            System.out.printf("Preço: R$ %.2f",roupa.getPreco());
+            System.out.printf("\nPreço: R$ %.2f",roupa.getPreco());
         }
-        System.out.printf("Preço Total: R$ %.2f",sexta.getPrecoTotalDaSexta());
+        System.out.printf("\nPreço Total: R$ %.2f", sexta.getPrecoTotalSexta());
+
     }
 }

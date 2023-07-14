@@ -1,4 +1,5 @@
 package com.github.lucasdevrj.sevistacomodev.principal;
+import com.github.lucasdevrj.sevistacomodev.Caixa;
 import com.github.lucasdevrj.sevistacomodev.sexta.SextaDeRoupas;
 
 import java.util.Scanner;
@@ -47,7 +48,8 @@ public class MenuPrincipal {
                 break;
 
                 case 5:
-
+                    Caixa caixa = new Caixa();
+                    caixa.exibeMenuCaixa(sexta);
                 break;
         }
     }

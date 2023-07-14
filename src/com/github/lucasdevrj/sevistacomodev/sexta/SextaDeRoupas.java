@@ -1,5 +1,6 @@
 package com.github.lucasdevrj.sevistacomodev.sexta;
 
+import com.github.lucasdevrj.sevistacomodev.Calculadora;
 import com.github.lucasdevrj.sevistacomodev.modelos.Roupa;
 import com.github.lucasdevrj.sevistacomodev.principal.MenuPrincipal;
 
@@ -8,17 +9,18 @@ import java.util.Scanner;
 
 public class SextaDeRoupas {
     private ArrayList<Roupa> sextaDeRoupas = new ArrayList<Roupa>();
-    private double precoTotalDaSexta = 0;
+    private double precoTotalSexta;
     Scanner entrada = new Scanner(System.in);
     MenuPrincipal menuPrincipal = new MenuPrincipal();
+    Calculadora calculadora = new Calculadora();
+
+    public double getPrecoTotalSexta() {
+        return calculadora.getPrecoTotalSexta();
+    }
+
     public ArrayList<Roupa> getSextaDeRoupas() {
         return sextaDeRoupas;
     }
-
-    public double getPrecoTotalDaSexta() {
-        return precoTotalDaSexta;
-    }
-
     public void exibeMenuSexta(SextaDeRoupas sexta) {
         String menu = """
                 -------------------|SEXTA|-------------------
@@ -63,7 +65,7 @@ public class SextaDeRoupas {
 
         if (opcao == 1) {
             sextaDeRoupas.add(roupa);
-            this.precoTotalDaSexta += roupa.getPreco();
+            calculadora.calculaPrecoTotal(roupa);
             System.out.println("A " + roupa.getNome() + " foi adiciona na sexta!!");
         }
     }
