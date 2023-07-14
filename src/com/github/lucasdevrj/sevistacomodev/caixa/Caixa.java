@@ -38,6 +38,7 @@ public class Caixa {
                 System.out.printf("Desconto: %.2f%%\n", sexta.getDesconto());
             }
             System.out.printf("Preço Total: R$ %.2f\n", sexta.getPrecoTotalSexta());
+            System.out.println("Roupa(s) comprada(s) com sucesso!");
         } else {
             System.out.println("Coloque roupas na sexta para poder compra-las!!");
         }

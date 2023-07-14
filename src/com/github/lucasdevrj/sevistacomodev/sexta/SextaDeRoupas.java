@@ -45,7 +45,7 @@ public class SextaDeRoupas {
                 break;
 
                 case 3:
-                    //exibeRoupasDaSexta();
+                    removeTodasPecasDeRoupa(sexta);
                 break;
 
                 case 4:
@@ -53,6 +53,13 @@ public class SextaDeRoupas {
                 break;
         }
     }
+
+    public void removeTodasPecasDeRoupa(SextaDeRoupas sexta) {
+        this.sextaDeRoupas.clear();
+        System.out.println("Todas as peças de roupas foram removidas da sexta!");
+        exibeMenuSexta(sexta);
+    }
+
     public void adicionaNaSexta(Roupa roupa) {
         Scanner entrada = new Scanner(System.in);
         System.out.print("Você deseja adicionar na sexta?\n1 - Sim ou 2 - Não: ");

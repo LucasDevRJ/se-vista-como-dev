@@ -8,7 +8,6 @@ import java.util.ArrayList;
 public class Calculadora {
     private double precoTotalSexta = 0;
     private double desconto = 0;
-
     public double getPrecoTotalSexta() {
         return precoTotalSexta;
     }
