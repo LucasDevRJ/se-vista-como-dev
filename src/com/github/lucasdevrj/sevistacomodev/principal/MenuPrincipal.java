@@ -21,6 +21,7 @@ public class MenuPrincipal {
                 3 - Ver Calçados
                 4 - Ver Sexta
                 5 - Caixa
+                6 - Sair
                 --------------------------------------------
                 """;
         System.out.println(menu);
@@ -51,6 +52,22 @@ public class MenuPrincipal {
                     Caixa caixa = new Caixa();
                     caixa.exibeMenuCaixa(sexta);
                 break;
+
+                case 6:
+                    finalizaPrograma(sexta);
+                break;
+
+                default:
+                    System.out.println("Opção inválida!!");
+        }
+    }
+
+    private void finalizaPrograma(SextaDeRoupas sexta) {
+        if (sexta.getSextaDeRoupas().isEmpty()) {
+            System.out.println("Programa finalizado.");
+        } else {
+            System.out.println("Compre ou esvazia a sexta para poder finalizar o programa!!");
+            exibeMenuPrincipal(sexta);
         }
     }
 }

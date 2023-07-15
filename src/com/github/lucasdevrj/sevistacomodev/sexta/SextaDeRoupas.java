@@ -55,8 +55,12 @@ public class SextaDeRoupas {
     }
 
     public void removeTodasPecasDeRoupa(SextaDeRoupas sexta) {
-        this.sextaDeRoupas.clear();
-        System.out.println("Todas as peças de roupas foram removidas da sexta!");
+        if (!sexta.getSextaDeRoupas().isEmpty()) {
+            this.sextaDeRoupas.clear();
+            System.out.println("Todas as peças de roupas foram removidas da sexta!");
+        } else {
+            System.out.println("A sexta já está vázia!!");
+        }
         exibeMenuSexta(sexta);
     }
 
