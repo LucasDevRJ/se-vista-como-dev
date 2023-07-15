@@ -86,8 +86,8 @@ public class MenuCamiseta {
                     menuPrincipal.exibeMenuPrincipal(sexta);
                 break;
 
-            default:
-                System.out.println("Opção inválida!");
+                default:
+                    System.out.println("Opção inválida!");
         }
     }
 }
