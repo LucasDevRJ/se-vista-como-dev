@@ -1,6 +1,6 @@
 package com.github.lucasdevrj.sevistacomodev.modelos;
 
-public class Roupa {
+public class Roupa implements Comparable<Roupa> {
     protected String nome;
     protected double preco;
     protected String cor;
@@ -33,5 +33,10 @@ public class Roupa {
     }
     public String getDescricao() {
         return descricao;
+    }
+
+    @Override
+    public int compareTo(Roupa outraRoupa) {
+        return Double.valueOf(this.preco).compareTo(Double.valueOf(outraRoupa.preco));
     }
 }

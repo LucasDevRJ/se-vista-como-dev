@@ -5,6 +5,7 @@ import com.github.lucasdevrj.sevistacomodev.modelos.Roupa;
 import com.github.lucasdevrj.sevistacomodev.principal.MenuPrincipal;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class SextaDeRoupas {
@@ -84,6 +85,7 @@ public class SextaDeRoupas {
     public void exibeRoupasDaSexta(SextaDeRoupas sexta) {
         if (!sextaDeRoupas.isEmpty()) {
             for (int i = 0; i < this.sextaDeRoupas.size(); i++) {
+                Collections.sort(this.sextaDeRoupas);
                 Roupa roupa = this.sextaDeRoupas.get(i);
                 String informacoes = """
                     Posição: %d
@@ -100,7 +102,7 @@ public class SextaDeRoupas {
     }
     public void removerPecaDeRoupa(SextaDeRoupas sexta) {
         if (!this.sextaDeRoupas.isEmpty()) {
-            System.out.println("Digite o número da roupa que deseja remover: ");
+            System.out.print("Digite o número da roupa que deseja remover: ");
             int opcao = entrada.nextInt();
             for (int i = 0; i < this.sextaDeRoupas.size(); i++) {
                 if (opcao == i+1) {
