@@ -1,9 +1,6 @@
 package com.github.lucasdevrj.sevistacomodev.calculadora;
 
 import com.github.lucasdevrj.sevistacomodev.modelos.Roupa;
-import com.github.lucasdevrj.sevistacomodev.sexta.SextaDeRoupas;
-
-import java.util.ArrayList;
 
 public class Calculadora {
     private double precoTotalSexta = 0;
@@ -17,12 +14,20 @@ public class Calculadora {
     public double calculaPrecoTotal(Roupa roupa) {
         this.precoTotalSexta += roupa.getPreco();
         if (this.precoTotalSexta >= 300.00) {
-            calculaDescontoComprasAcimaDeTrezentos();
+            calculaDescontoComprasDeTrezentosParaCima();
+        } else if (this.precoTotalSexta >= 500) {
+            calculaDescontoComprasDeQuinhentosParaCima();
         }
         return this.precoTotalSexta;
     }
 
-    private double calculaDescontoComprasAcimaDeTrezentos() {
+    private double calculaDescontoComprasDeQuinhentosParaCima() {
+        this.desconto = 0.25;
+        this.precoTotalSexta -= this.precoTotalSexta * desconto;
+        return this.precoTotalSexta;
+    }
+
+    private double calculaDescontoComprasDeTrezentosParaCima() {
         this.desconto = 0.15;
         this.precoTotalSexta -= this.precoTotalSexta * desconto;
         return this.precoTotalSexta;
