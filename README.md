@@ -1,9 +1,10 @@
-![Capa LucasDevRJ](https://github.com/LucasDevRJ/harken/assets/95040236/73311b1a-dd3c-4a51-9c1c-998b3318d0f5)
+
+![Capa LucasDevRJ](https://github.com/LucasDevRJ/se-vista-como-dev/assets/95040236/b8060c66-f668-4ccb-a5f7-b6e29e436bd1)
 <h1 align="center">Se Vista Como Dev</h1>
 
 ![Badge do Desenvolvedor](https://img.shields.io/badge/Desenvolvedor-LucasDevRJ-%23000000)
 ![Badge do nome do projeto](https://img.shields.io/badge/Projeto-Se_Vista_Como_Dev-%23000000)
-![Badge da Data do projeto](https://img.shields.io/badge/Data-06/2023-%23000000)
+![Badge da Data do projeto](https://img.shields.io/badge/Data-07/2023-%23000000)
 ![Badge do Status do projeto](https://img.shields.io/badge/Status-Finalizado-%23000000)
 ![Badge da autoria do projeto](https://img.shields.io/badge/Autoral-Sim-%23000000)
 
