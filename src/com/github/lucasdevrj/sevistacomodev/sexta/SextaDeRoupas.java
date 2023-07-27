@@ -52,6 +52,10 @@ public class SextaDeRoupas {
                 case 4:
                     menuPrincipal.exibeMenuPrincipal(sexta);
                 break;
+
+            default:
+                System.out.println("Opção inválida!");
+                exibeRoupasDaSexta(sexta);
         }
     }
 

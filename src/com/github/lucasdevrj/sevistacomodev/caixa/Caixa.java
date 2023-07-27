@@ -24,6 +24,7 @@ public class Caixa {
             menuPrincipal.exibeMenuPrincipal(sexta);
         } else {
             System.out.println("Opção inválida!!");
+            exibeMenuCaixa(sexta);
         }
     }
     public void venderRoupas(SextaDeRoupas sexta) {

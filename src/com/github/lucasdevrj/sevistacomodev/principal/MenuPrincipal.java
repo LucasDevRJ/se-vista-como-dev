@@ -59,6 +59,7 @@ public class MenuPrincipal {
 
                 default:
                     System.out.println("Opção inválida!!");
+                    exibeMenuPrincipal(sexta);
         }
     }
 

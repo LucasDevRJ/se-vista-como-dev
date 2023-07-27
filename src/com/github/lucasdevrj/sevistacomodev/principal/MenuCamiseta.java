@@ -88,6 +88,7 @@ public class MenuCamiseta {
 
                 default:
                     System.out.println("Opção inválida!");
+                    exibeMenuCamiseta(sexta);
         }
     }
 }

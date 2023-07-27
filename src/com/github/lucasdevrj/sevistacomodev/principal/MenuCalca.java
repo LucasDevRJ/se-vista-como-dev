@@ -88,6 +88,7 @@ public class MenuCalca {
 
             default:
                 System.out.println("Opção inválida!");
+                exibeMenuCalca(sexta);
         }
     }
 }
